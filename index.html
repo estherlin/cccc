@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Esther Lin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/style3.css" />
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+
+            console.log(document.getElementById("aperture").src);
+
+            if (document.getElementById("aperture").src.includes("-closed.png")) {
+                document.getElementById("aperture").src = "assets/icons/aperture-open.png";
+            } else if (document.getElementById("aperture").src.includes("-open.png")) {
+                document.getElementById("aperture").src = "assets/icons/aperture-closed.png";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <nav>
+            <div style="text-align:left; height:30px">
+                <h4>Coding Club @ City Centre Community Centre</h4>
+                <p>by <a href="https://estherlin.github.io/">Esther Lin</a></p>
+            </div>
+
+            <div class="toggle" onclick="darkMode()" style="text-align:right; height:30px">
+                <i title="">
+              <img src="assets/icons/aperture-open.png" class="toggle-button" id="aperture" width="25" height="25"/>
+            </i>
+            </div>
+        </nav>
+
+ 
+
+        <!-- Coding club 
+
+        <div class="row-gallery">
+            <div class="column-gallery">
+                <img src="./assets/cccc/night_ferry_wave.gif">
+                <img src="./assets/cccc/sus_owl.gif">
+                <img src="./assets/cccc/fishing.gif">
+                <img src="./assets/cccc/panda.png">
+            </div>
+            <div class="column-gallery">
+                <a href="./pages/earthquake.html"><img src="./assets/cccc/earthquake.gif"></a>
+                <img src="./assets/cccc/ubc.gif">
+                <img src="./assets/cccc/penguin.png">
+            </div>
+            <div class="column-gallery">
+                <img src="./assets/cccc/to_the_mooon.png">
+                <img src="./assets/cccc/trees.png">
+                <img src="./assets/cccc/space_station.gif">
+            </div>
+            <div class="column-gallery">
+                <img src="./assets/cccc/owl.png">
+                <img src="./assets/cccc/icecream_truck.gif">
+                <img src="./assets/cccc/shooting_star.gif">
+            </div>
+
+        </div>
+
+        -->
+        <br>
+
+        <!-- Attempt 2 -->
+        <!-- Photo Grid -->
+        <div class="row"> 
+          <div class="column">
+            <img src="./assets/cccc/dream_fishing.gif" style="width:100%">
+            
+            <img src="./assets/cccc/sus_owl.gif" style="width:100%">
+            <img src="./assets/cccc/fishing.gif" style="width:100%">
+            <img src="./assets/cccc/to_the_mooon.png" style="width:100%">
+            <img src="./assets/cccc/night_ferry_wave.gif" style="width:100%">
+
+          </div>
+          <div class="column">
+            <img src="./assets/cccc/space_station.gif" style="width:100%">
+            <img src="./assets/cccc/panda.png" style="width:100%">
+            <img src="./assets/cccc/shooting_star.gif" style="width:100%">
+            <img src="./assets/cccc/earthquake.gif" style="width:100%">
+            
+
+          </div>  
+          <div class="column">
+          <img src="./assets/cccc/ubc.gif" style="width:100%">
+            <img src="./assets/cccc/penguin.png" style="width:100%">
+            <img src="./assets/cccc/icecream.gif" style="width:100%">
+            <img src="./assets/cccc/owl.png" style="width:100%">
+            
+            <img src="./assets/cccc/trees.png" style="width:100%">
+
+          </div>
+
+        </div>
+        <hr>
+        <h6>Last updated: Dec 2021</h6>
+
+
+    </div>
+
+</body>
+
+</html>

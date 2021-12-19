@@ -1,0 +1,299 @@
+/* Overall */
+
+:root {
+    --primary-color: #68998D;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    /*--dark-font-color: #d8d8d8;*/
+    --dark-font-color: #FDFEFE;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    --dark-color: #1e1e1e;
+    --dark-opacity: 1.0;
+    --link-color: #7ab97a;
+    --dark-link-color: #b7cda4;
+    --padding-top: 80px;
+    --padding-side: 100px;
+    --sidebar-width: 340px;
+}
+
+body {
+    /*font-family: 'Lora', serif;*/
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    width: 80%;
+    margin: auto;
+    min-height: 400px;
+    margin-bottom: 80px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    opacity: 1.0;
+}
+
+/* Dark mode */
+
+.dark-mode {
+    background-color: var(--dark-color);
+    color: var(--dark-font-color);
+    opacity: var(--dark-opacity);
+}
+
+.main {
+    margin-left: calc(60px + 12vw);
+    padding-top: var(--padding-top);
+    margin-right: calc(60px + 12vw);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /*padding: 40px 40px;*/
+    padding-bottom: var(--padding-top);
+}
+
+/* Fonts */
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-left: -4px;
+}
+
+h1, h2 {
+    margin-left: -3px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    margin-left: -4px;
+}
+
+h3 {
+    margin-left: -3px;
+}
+
+h4 {
+    margin-left: -2px;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    margin-left: -1px;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.80rem;
+    line-height: 1.1;
+    margin-left: -1px;
+}
+
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+p, ol, ul, li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* interactive stuff */
+
+.toggle {
+    position: relative;
+}
+
+.toggle:hover:after {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 0.8rem;
+    content: "";
+    opacity: 0.7;
+}
+
+.toggle-button:hover {
+    position: relative;
+    width: 30px;
+    top: 0;
+    left: 0;
+    height: auto;
+    z-index: 999;
+}
+
+/* Projects */
+
+/* Create two equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    vertical-align: middle;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.column-gallery {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+    vertical-align: middle;
+}
+
+.column-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+figure {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.2em;
+    text-indent: 3px;
+    /*width: 320px;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 32%; /* IE10 */
+  flex: 32%;
+  max-width: 32%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns 
+
+@media screen and (max-width: 1000px) {
+    .column-gallery {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column-gallery {
+        flex: 100%;
+        max-width: 100%;
+    }
+}*/
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}*/
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* Dark mode
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-color);
+        color: var(--dark-font-color);
+        opacity: var(--dark-opacity);
+    }
+}
+*/
+
+/* Light mode
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--bg-color);
+        color: var(--font-color);
+    }
+}
+*/

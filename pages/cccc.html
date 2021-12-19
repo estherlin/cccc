@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Esther Lin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3cb16648c5.js" crossorigin="anonymous"></script>  
+  <script>
+    function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      console.log(element);
+
+      if( document.getElementById("aperture").src.includes("-closed.png")){
+          document.getElementById("aperture").src = "../assets/icons/aperture-open.png";
+      } else if( document.getElementById("aperture").src.includes("-open.png")){
+          document.getElementById("aperture").src = "../assets/icons/aperture-closed.png";
+      }
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div style="text-align:left; height:30px">
+        <a class="icon" href="../index.html">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+    </div>
+    <div class="toggle" onclick="darkMode()" style="text-align:right; height:30px">
+      <i title="">
+        <!--<img src="../assets/icons/aperture-open.png" class="toggle-button" id="aperture" width="25" height="25"/>-->
+      </i>
+    </div>
+  </nav>  
+  <section>
+      <article class="post">
+
+        <h4>Coding Club</h4>
+        <br>
+        <!--<p>
+          My sister <a class="icon" href="https://rebeccayelin.github.io/">Rebecca</a>
+          is designing some really cool artwork!
+        </p>-->
+        <br>
+        <div class="row-gallery">
+            <div class="column-gallery">
+              <img src="../assets/cccc/night_ferry_wave.gif">
+              <img src="../assets/cccc/panda.png">
+              <img src="../assets/cccc/trees.png">
+            </div>
+            <div class="column-gallery">
+              <img src="../assets/cccc/to_the_mooon.png">
+              <img src="../assets/cccc/sus_owl.gif">
+              <a href="./earthquake.html"><img src="../assets/cccc/earthquake.gif"></a>
+            </div>
+            <div class="column-gallery">
+              <img src="../assets/cccc/owl.png">
+              <img src="../assets/cccc/shooting_star.gif">
+              <img src="../assets/cccc/penguin.png">
+            </div>
+        </div>
+        <br>
+        <hr>
+
+    </article>
+  </section>
+</body>
+<footer>
+  <div style="text-align: center;">
+    <p>
+      <small>&copy; Esther Lin 2021</small>
+      <br>
+      <small>
+        <a class="icon" href="https://github.com/estherlin"><i class="fab fa-github-square"></i></a>&emsp;
+        <a class="icon" href="https://www.linkedin.com/in/esyhlin/"><i class="fab fa-linkedin"></i></a>&emsp;
+        <a class="icon" href="mailto:lin@cs.toronto.edu"><i class="fas fa-envelope"></i></a>&emsp;
+      </small>
+    </p>
+  </div>
+</footer>
+</html>
